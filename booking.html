@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Booking</title>
+<link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🍴 Foodie's Restaurant</div>
+    <ul>
+        <li><a href="indexpro1.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="booking-box">
+    <h2>🍽️ Table Booking</h2>
+
+    <input type="text" id="name" placeholder="Enter Your Name">
+
+    <input type="tel" id="phone" placeholder="Phone Number">
+
+    <input type="date" id="date">
+
+    <input type="time" id="time">
+
+    <input type="number" id="guest" placeholder="Number of Guests">
+
+    <button onclick="bookTable()">Book Now</button>
+    
+
+
+    <p id="result"></p>
+</div>
+
+<script src="booking.js"></script>
+
+</body>
+</html>

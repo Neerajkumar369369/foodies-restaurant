@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu</title>
+<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <nav>
+    <div class="logo">🍴 Foodie's</div>
+    <ul>
+        <li><a href="indexpro1.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="loginpage.html">logint</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">cart</a></li>
+        <li><a href="booking.html">Booking</a></li>
+    </ul>
+</nav>
+
+
+<header>
+    <h1>🍴 Our Menu</h1>
+    <p>Choose your favorite food</p>
+</header>
+
+<section class="menu">
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaAilDKL5g-JHvrk0VXL5Nry1a-DFgg-FYJAIhIn9bSA&s=10" alt="Pizza">
+        <h2>Pizza</h2>
+        <p>₹299</p>
+        <button onclick="addCart('Pizza' ,299)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99CL3ZFv2IX_hhVTxMA720lPcY_265CDI9AgdZzYvfw&s=10" alt="Burger">
+        <h2>Burger</h2>
+        <p>₹149</p>
+        <button onclick="addCart('Burger' ,149)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9EyKG9tQ5w48gIscPVhpFdkyLeaqME_-iFpE-T5q3w&s=10" alt="Pasta">
+        <h2>Pasta</h2>
+        <p>₹249</p>
+        <button onclick="addCart('Pasta' ,249)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRba9gGl7P95ElNSG90qfUo-bW5gv0Xgf-BcFIQx9Ubow&s=10" alt="Biryani">
+        <h2>Biryani</h2>
+        <p>₹199</p>
+        <button onclick="addCart('Biryani' ,250)">Add to Cart</button>
+    </div>
+
+</section>
+<h2>🛒 Shopping Cart</h2>
+
+<ul id="cartItems"></ul>
+
+<h3>Total Bill: ₹<span id="totalPrice">0</span></h3>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
